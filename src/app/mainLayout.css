@@ -33,3 +33,27 @@ html {
     grid-template-columns: 100vw;
     grid-template-rows: 5vh, 100vh, 100vh, 100vh, 100vh, 100vh;
 }
+
+#top-bar {
+  grid-area: top-bar;
+}
+
+#landing-page {
+  grid-area: landing-page;
+}
+
+#about {
+  grid-area: about;
+}
+
+#skills {
+  grid-area: skills;
+}
+
+#projects {
+  grid-area: projects;
+}
+
+#contact {
+  grid-area: contact;
+}
