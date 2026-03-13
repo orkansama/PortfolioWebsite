@@ -1,0 +1,35 @@
+:root {
+    --MauveColor: cba6f7;
+    --BaseColor: 1e1e2e;
+    --RedColor: f38ba8;
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-base: 1rem;
+    --fs-lg: 1.25rem;
+    --fs-xl: 1.75rem;
+    --fs-xxl: 2.5rem;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background: --BaseColor;
+    font-size: 20px;
+    font-family: Arial, Verdana, Tahoma;
+    font-style: normal;
+}
+
+
+.mainGrid {
+    display: grid;
+    grid-template-areas:
+        "top-bar"
+        "landing-page"
+        "about"
+        "skills"
+        "projects"
+        "contact";
+    grid-template-columns: 100vw;
+    grid-template-rows: 5vh, 100vh, 100vh, 100vh, 100vh, 100vh;
+}
