@@ -7,17 +7,18 @@ let globalIconSize: number = 30
 let githubIcon: IconWrapperProperties = {
   icon: FaGithub,
   name: "githubIcon",
-  size: globalIconSize 
+  size: globalIconSize
 }
 
 let linkedinIcon: IconWrapperProperties = {
   icon: CiLinkedin,
   name: "linkedinIcon",
-  size: globalIconSize 
+  size: globalIconSize
 }
 
 export default function MainPage() {
   let iconsArray: IconWrapperProperties[] = [githubIcon, linkedinIcon];
+  const pageSectionNames: string[] = ["Landingpage", "About", "Skills", "Projects", "Contact"];
   return (
     <Layout>
       <div>Test</div>
