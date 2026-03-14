@@ -36,6 +36,9 @@ html {
 
 #top-bar {
   grid-area: top-bar;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #landing-page {

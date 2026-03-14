@@ -3,7 +3,7 @@ import '../app/mainLayout.css';
 export default function Layout({
     children,
 }: {
-    children: React.ReactNode
+    children: any
 }) {
     return (
         <html lang="en">
