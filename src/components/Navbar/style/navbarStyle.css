@@ -1,7 +1,7 @@
 .boxArround-tab-nav-container {
   display: flex;
-  align-items: center;
   justify-content: center;
+  position: sticky;
 }
 
 .tab-nav-container {
@@ -22,13 +22,11 @@
 }
 
 .hyperlink {
-  color: var(--Mauve);
+  color: var(--MauveColor);
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 0.05em;
   padding: 20px;
   position: relative;
-  font-size: 21px;
 }
 
 .hyperlink:after {
