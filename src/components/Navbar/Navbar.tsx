@@ -2,31 +2,48 @@ import "./style/navbarStyle.css"
 import { IconWrapperProperties } from '../../types/IconWrapperProperties'
 
 let iconSize: number = 30
-export function Navbar(
-    pageSectionNames: string[],
-    iconsArray: React.ComponentType<React.SVGProps<SVGSVGElement>>[]
-) {
-    let githubIcon: IconWrapperProperties = {
-        icon: iconsArray[0],
-        name: "githubIcon",
-        size: iconSize
-    }
 
-    let linkedinIcon: IconWrapperProperties = {
-        icon: iconsArray[1],
-        name: "linkedinIcon",
-        size: iconSize
-    }
+interface NavbarProps {
+	pageSectionNames: string[]
+	iconsArray: React.ComponentType<React.SVGProps<SVGSVGElement>>[]
+}
 
-    return (
-        <div className="tab-nav-container">
-            <li className='liTableCell'><a className='hyperlink' href="#">{githubIcon.icon}</a></li>
-            <li className='liTableCell'><a className='hyperlink' href="#">{linkedinIcon}</a></li>
-            {pageSectionNames.map((element, index) => (
-                <li key={index} className='liTableCell'>
-                    <a className='hyperlink' href="#">{element}</a>
-                </li>
-            ))}
-        </div>
-    )
+export function Navbar({ pageSectionNames, iconsArray }: NavbarProps) {
+	let githubIcon: IconWrapperProperties = {
+		icon: iconsArray[0],
+		name: "githubIcon",
+		size: iconSize
+	}
+
+	let linkedinIcon: IconWrapperProperties = {
+		icon: iconsArray[1],
+		name: "linkedinIcon",
+		size: iconSize
+	}
+
+	return (
+		<div>
+			<div className="tab-nav-container">
+				<div>
+					<li className='liTableCell'>
+						<a className='hyperlink' href="#">
+							<githubIcon.icon width={githubIcon.size} />.
+						</a>
+					</li>
+					<li className='liTableCell'>
+						<a className='hyperlink' href="#">
+							<linkedinIcon.icon width={linkedinIcon.size} />
+						</a>
+					</li>
+				</div>
+				<div>
+					{pageSectionNames.map((element, index) => (
+						<li key={index} className='liTableCell'>
+							<a className='hyperlink' href="#">{element}</a>
+						</li>
+					))}
+				</div>
+			</div>
+		</div>
+	)
 }
