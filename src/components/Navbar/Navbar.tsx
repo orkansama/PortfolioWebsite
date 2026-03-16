@@ -1,7 +1,7 @@
 import "./style/navbarStyle.css"
 import { IconWrapperProperties } from '../../types/IconWrapperProperties'
 
-let iconSize: number = 30
+let iconSize: number = 40
 
 interface NavbarProps {
 	pageSectionNames: string[]
@@ -27,12 +27,12 @@ export function Navbar({ pageSectionNames, iconsArray }: NavbarProps) {
 				<div>
 					<li className='liTableCell'>
 						<a className='hyperlink' href="#">
-							<githubIcon.icon width={githubIcon.size} />.
+							<githubIcon.icon fontSize={githubIcon.size} />.
 						</a>
 					</li>
 					<li className='liTableCell'>
 						<a className='hyperlink' href="#">
-							<linkedinIcon.icon width={linkedinIcon.size} />
+							<linkedinIcon.icon fontSize={linkedinIcon.size} />
 						</a>
 					</li>
 				</div>
