@@ -1,14 +1,20 @@
+.boxArround-tab-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .tab-nav-container {
-    background-color: var(--Base);
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    width: 80vw;
-    height: 5vh;
+  background-color: var(--Base);
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 80vw;
+  height: 5vh;
 }
 
 .liTableCell {

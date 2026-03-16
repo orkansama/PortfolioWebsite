@@ -22,7 +22,7 @@ export function Navbar({ pageSectionNames, iconsArray }: NavbarProps) {
 	}
 
 	return (
-		<div>
+		<div className="boxArround-tab-nav-container">
 			<div className="tab-nav-container">
 				<div>
 					<li className='liTableCell'>
