@@ -1,21 +1,32 @@
+import './style/landingpageStyle.css'
+
 type LandingpageProp = {
     iconsArray: React.ComponentType<React.SVGProps<SVGSVGElement>>[];
 };
 
 export function Landingpage({ iconsArray }: LandingpageProp) {
     const scrollDown = "Scroll down for more information"
-    const fancyText = "this whole backend thing"
+    const fancyText = "backend"
 
     return (
         <div id="landing-page">
-            <p>
-                Hi, im Orkan Gökcen and i do
-                <p className="input">
-                    {fancyText}
+            <div>
+                <p className='text'>
+                    Hi, im Orkan Gökcen and i do this whole
+                    <span className='input'>
+                        {fancyText}
+                    </span>
+                    thing
                 </p>
-            </p>
-            {scrollDown}
-            <Location iconsArray={iconsArray} index={2} />
+                <div className='centerTextInDiv'>
+                    <div className='subText'>
+                        <p>{scrollDown}</p>
+                    </div>
+                    <div className='subText'>
+                        <Location iconsArray={iconsArray} index={2} />
+                    </div>
+                </div>
+            </div>
         </div>
     )
 };

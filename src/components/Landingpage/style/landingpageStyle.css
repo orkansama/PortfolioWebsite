@@ -4,15 +4,47 @@
   text-align: center;
 }
 
+.landing-content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 .input {
-  color: white;
+  color: var(--MauveColor);
   border: 2px solid var(--MauveColor);
   border-radius: 10px;
-  padding: 10px 25px;
+  padding: 5px 5px;
   background: transparent;
-  max-width: 190px;
 }
 
 .input:active {
   box-shadow: 2px 2px 15px var(--RedColor) inset;
+}
+
+.text {
+  color: var(--MauveColor);
+  font-size: var(--fs-xxl);
+}
+
+.subText {
+  color: var(--MauveColor);
+  font-size: var(--fs-lg);
+}
+
+.centerTextInDiv {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* 
+  for the gap between 
+  scrollDown
+  and
+  Location-Component
+*/
+.centerTextInDiv>div p {
+  margin: 0;
+  padding: 0;
 }
