@@ -51,7 +51,7 @@ html {
 #about {
   grid-area: about;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   min-height: 100vh;
 }
