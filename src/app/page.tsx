@@ -4,6 +4,7 @@ import { CiLinkedin } from "react-icons/ci";
 import { Navbar } from '@/components/Navbar/Navbar';
 import { Landingpage } from '@/components/Landingpage/Landingpage';
 import { CiLocationOn } from "react-icons/ci";
+import { About } from '@/components/About/About';
 
 export default function MainPage() {
 	let iconsArray: React.ComponentType<React.SVGProps<SVGSVGElement>>[] = [FaGithub, CiLinkedin, CiLocationOn];
@@ -13,6 +14,7 @@ export default function MainPage() {
 		<Layout>
 			<Navbar pageSectionNames={pageSectionNames} iconsArray={iconsArray} />
 			<Landingpage iconsArray={iconsArray} />
+			<About />
 		</Layout>
 	)
 }
