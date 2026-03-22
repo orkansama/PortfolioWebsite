@@ -6,17 +6,12 @@ type LandingpageProp = {
 
 export function Landingpage({ iconsArray }: LandingpageProp) {
     const scrollDown = "Scroll down for more information"
-    const fancyText = "backend"
 
     return (
         <div id="landing-page">
             <div>
                 <p className='text'>
-                    Hi, im Orkan Gökcen and i do this whole
-                    <span className='input'>
-                        {fancyText}
-                    </span>
-                    thing
+                    Hi, im Orkan Gökcen and i do this whole backend thing
                 </p>
                 <div className='centerTextInDiv'>
                     <div className='subText'>
